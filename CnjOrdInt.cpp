@@ -54,6 +54,7 @@ bool CnjOrdInt::insertarOrd(int x) {
             ant->sgt->sgt = p;
         }
     }
+	
     return rsl;
 }
 }
