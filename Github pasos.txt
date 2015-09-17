@@ -1,0 +1,43 @@
+(git help, para ayuda)
+TODO ESTO SE CORRE CON EL BASH QUE VIENE CUANDO SE INSTALA GIT(se puede accesar con click derecho y git bash)
+abrir git bash en la carpeta donde se desea trabajar el repositorio
+
+configuramos ususario
+$ git  config --global user.name "esteban0589"
+$ git  config --global user.email "a@a.com"
+
+se genera public key(cuando uno la genera en el texto que aparece dice la direccion donde se guardo y ademas se debe escoger una clave para el sshkey mayor de 4 digitos)
+$ ssh-keygen
+(La guardo donde quiera, con enter se guarda en lugar default y se le da una clave(se recomienda poner una sino con enter basta))
+se lee llave en 
+$ cat /c/Users/eespr/.ssh/id_rsa.pub // esta direccion fue donde yo la guarde
+En github.com bajo los settings de usuario se busca sshkey y se agrega la clave 
+que se copio en la linea anterior y el nombre que se le da el que uno quiera
+
+
+
+este ejemplo es para crear un proyecto(no se si va clone o init primero)
+$git clone https://github.com/berczeck/Mejorandola.git// bajamos el repertorio entero en el directorio donde se encuentre bach
+
+//////////////////////////////////
+(esta parte no se si va primero o va el clone osea le toca a alguien mas trabajarlo jeje creo que aqui es donde se le especifica con cual de todos los repertorios se va a trabajar)
+
+Conecto con rep en la web
+$ git remote add origin https://github.com/Esteban0589/Prueba-Github.git
+//////////////////////////////////
+
+$git init //inicializa repertorio
+$touch readme // crea un archivo(readme es un ejemplo de un archivo vacio)
+Digo archivos que voy a subir(para subir todos usar opcion 2) 
+op1:$ git add readme
+op2:$ git add * // esta puede tambien ser "git add ." "git add -A" "git add --all" este ultimo considera archivos borrados inclusive 
+Veo lo que hay por agregar y q no
+$ git status
+subo primer archivo a mi rep local 
+$git commit -m "DESCRIPCION" // asi se vera esta version que se subio
+mando todo a la web(opc 2 especifica que envia a master)(opc 3 es si uno esta en una rama llamada"RAMA"para subir a esta rama)
+op0 $ git push //
+op1 $ git push origin master//
+op2 $ git push origin RAMA//
+
+
