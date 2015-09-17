@@ -2,6 +2,11 @@
 TODO ESTO SE CORRE CON EL BASH QUE VIENE CUANDO SE INSTALA GIT(se puede accesar con click derecho y git bash)
 abrir git bash en la carpeta donde se desea trabajar el repositorio
 
+/////////////////////////
+/////Config inicial//////
+/////////////////////////
+
+
 configuramos ususario
 $ git  config --global user.name "esteban0589"
 $ git  config --global user.email "a@a.com"
@@ -16,11 +21,15 @@ que se copio en la linea anterior y el nombre que se le da el que uno quiera
 
 
 
+/////////////////////////////////////////////////////////////
+////////////TRABAJANDO SOBRE UN REP YA CREADO EN HITHUB//////
+/////////////////////////////////////////////////////////////
+
 este ejemplo es para crear un proyecto(no se si va clone o init primero)
 $git clone https://github.com/berczeck/Mejorandola.git// bajamos el repertorio entero en el directorio donde se encuentre bach
 
 //////////////////////////////////
-(esta parte no se si va primero o va el clone osea le toca a alguien mas trabajarlo jeje creo que aqui es donde se le especifica con cual de todos los repertorios se va a trabajar)
+(esta parte no se si va primero o va el clone osea le toca a alguien mas averiguarlo jeje creo que aqui es donde se le especifica con cual de todos los repertorios se va a trabajar)
 
 Conecto con rep en la web
 $ git remote add origin https://github.com/Esteban0589/Prueba-Github.git
@@ -36,8 +45,25 @@ $ git status
 subo primer archivo a mi rep local 
 $git commit -m "DESCRIPCION" // asi se vera esta version que se subio
 mando todo a la web(opc 2 especifica que envia a master)(opc 3 es si uno esta en una rama llamada"RAMA"para subir a esta rama)
-op0 $ git push //
-op1 $ git push origin master//
-op2 $ git push origin RAMA//
+op0:$ git push //
+op1:$ git push origin master//
+op2:$ git push origin RAMA//
+
+
+///////////////////////
+/////////BRANCHES//////
+///////////////////////
+Para ver las ramas del repositorio que uno tiene(solo se ven las ramas que uno mismo haya creado creo, por decirlo asi si adriana crea una rama yo no la voy a poder accesar o ver solo las que yo haga(por lo menos eso es lo que me parece))
+$git branch
+(si solo aparece branch quiere decir q todavia no se a creado ninguna rama propia)
+Crear una rama nueva
+$git branch RAMA
+Pasarse a trabajar en la rama de uno (digamos quela rama se llama "RAMA")
+$git checkout RAMA
+(todos los cambios que se hagan en esa carpeta y archivos solo se veran en esta rama)
+(un buen toq para ver como funciona en la compu de uno es crear una rama y hacer un 
+archivo que no este en master y verla en explorer y luego hacer checkout para master 
+y ver en explorer como ese archivo se desaparece)
+
 
 
