@@ -35,7 +35,7 @@ Conecto con rep en la web
 $ git remote add origin https://github.com/Esteban0589/Prueba-Github.git
 //////////////////////////////////
 
-$git init //inicializa repertorio
+$git init //inicializa repertorio(OJO:cuando se hace el init hay que estar en la carpeta que va a quedar como padre en el repositorio)
 $touch readme // crea un archivo(readme es un ejemplo de un archivo vacio)
 Digo archivos que voy a subir(para subir todos usar opcion 2) 
 op1:$ git add readme
@@ -64,6 +64,8 @@ $git checkout RAMA
 (un buen toq para ver como funciona en la compu de uno es crear una rama y hacer un 
 archivo que no este en master y verla en explorer y luego hacer checkout para master 
 y ver en explorer como ese archivo se desaparece)
+
+
 
 
 
