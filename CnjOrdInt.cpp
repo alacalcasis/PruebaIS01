@@ -151,7 +151,7 @@ CnjOrdInt& CnjOrdInt::operator*(const CnjOrdInt& b) const {
 
 }
 
-CnjOrdInt& CnjOrdInt::operator-(const CnjOrdInt& b) const {
+CnjOrdInt& CnjOrdInt::operator-(const CnjOrdInt& const b) const {
 }
 
 CnjOrdInt& CnjOrdInt::operator/(const CnjOrdInt& b) const {
