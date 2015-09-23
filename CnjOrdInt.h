@@ -45,7 +45,7 @@ public:
     CnjOrdInt& operator*(const CnjOrdInt& b) const;    
     
     // EFE: retorna un nuevo conjunto ordenado que representa la diferencia de *this con b.
-    CnjOrdInt& const  operator-(CnjOrdInt& const b) const;  
+    CnjOrdInt& const operator-(CnjOrdInt& b) const;  
     
     // EFE: retorna un nuevo conjunto ordenado que representa la diferencia simétrica de *this con b.
     CnjOrdInt& operator/(const CnjOrdInt& b); 
