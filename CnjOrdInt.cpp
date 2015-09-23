@@ -158,7 +158,6 @@ CnjOrdInt& CnjOrdInt::operator/(const CnjOrdInt& b) const {
 }
 
 string CnjOrdInt::aHil() {
-
     stringstream fs;
     NdoInt* p = inicio;
     
