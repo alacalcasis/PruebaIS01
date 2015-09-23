@@ -11,7 +11,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-using namespace std;
+using namespace std; // CAMBIO AQUÍ, Esteban
 
 class CnjOrdInt {
     // Representa un conjunto ordenado de enteros.
