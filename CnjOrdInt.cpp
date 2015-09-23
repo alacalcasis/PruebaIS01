@@ -25,7 +25,6 @@ CnjOrdInt::CnjOrdInt(const CnjOrdInt& orig) {
         }
     }
 }
-
 CnjOrdInt::~CnjOrdInt() {
 
 }
